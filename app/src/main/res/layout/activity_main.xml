@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Контейнер для фрагмента результату -->
+    <FrameLayout
+        android:id="@+id/result_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:padding="16dp"/>
+
+    <!-- Контейнер для фрагмента кнопок -->
+    <FrameLayout
+        android:id="@+id/button_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/result_container"
+        android:padding="16dp"/>
+
+    <!-- Контейнер для фрагмента історії -->
+    <FrameLayout
+        android:id="@+id/history_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/button_container"
+        android:padding="16dp"/>
+
+</RelativeLayout>
